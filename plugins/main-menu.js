@@ -266,16 +266,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     const listMessage = {
       text: `
 ┏━━〔 ıll *INFO USER* llı 〕━㉿
-⌬ 𝐍𝐚𝐦𝐚     : ${name}
-⌬ 𝐋𝐢𝐦𝐢t     : ${limit}
-⌬ 𝐒𝐭𝐚𝐭𝐮𝐬     : ${global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'Owner' : 'Users'}
-⌬ 𝐏𝐫𝐞𝐦𝐢𝐮𝐦   : ${premium ? `${conn.msToDate(premiumTime - new Date() * 1)}` : 'Gratisan'}
+⌬ Name     : ${name}
+⌬ Limit     : ${limit}
+⌬ Status     : ${global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'Owner' : 'Users'}
+⌬ User Prem : ${premium ? `${conn.msToDate(premiumTime - new Date() * 1)}` : 'Gratisan'}
 ┗━━━━━━━━━━━━━㉿
 ┏━━〔 ıll *STATUS INFO* llı 〕━㉿
-⌬ 𝐓𝐨𝐭𝐚𝐥 𝐔𝐬𝐞𝐫  : ${rtotalreg} dari ${totalreg}
-⌬ 𝐓𝐞𝐫𝐬𝐢𝐬𝐚     : ${limit} Limit
-⌬ 𝐑𝐨𝐥𝐞       : ${role}
-⌬ 𝐋𝐞𝐯𝐞𝐥      : *${level}*
+⌬ Total user  : ${rtotalreg} dari ${totalreg}
+⌬ Limit     : ${limit} Limit
+⌬ Role       : ${role}
+⌬ Level      : *${level}*
 ┗━━━━━━━━━━━━━㉿ 
 ⫹⫺ TIME : ${time}
 ⫹⫺ DATE : ${date}`,
